@@ -1,0 +1,70 @@
+*{
+    font-family: 'Inter';
+}
+
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 13vh;
+    z-index: 100;
+    /* background: transparent scroll; */
+    background-color: #121e2bf7;
+    box-shadow: #23262c 0px 2px 10px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    color: aliceblue;
+}
+body{
+    background-color: #121e2b;
+}
+.main{
+    height: 1000vh;
+    margin-top: 9em;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    font-size: 1.3em;
+    color: aliceblue;
+}
+.menu h5{
+    cursor: pointer;
+}
+.callme-box{
+    display: flex;
+    background-color: rgb(244, 179, 51);
+    height: 50%;
+    width: 120px;
+    padding: 0 1em;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.content-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+}
+
+.content-1 h1{
+    font-size: 5em;
+    color: aliceblue;
+    margin-bottom: 0;
+    font-weight: 750;
+}
+.content-1 p{
+    font-size: 1em;
+    color: rgb(164, 165, 168);
+}

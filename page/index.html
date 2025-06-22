@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pasyas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="header">
+        <h1>Portofolio</h1>
+        <div class="menu">
+            <h5>Home</h5>
+            <h5>Tentang</h5>
+            <h5>Proyek</h5>
+            <h5>Kontak</h5>
+        </div>
+        <div class="callme-box">
+            <h5>Hubungi Saya</h5>
+        </div>
+    </header>
+    <main class="main">
+        <div class="content-1">
+            <h1>Developer & <span style="color: #FBBF24">Product Manager</span></h1>
+            <p>Merancang dan mengembangkan aplikasi web yang memenuhi kebutuhan bisnis Anda.</p>
+        </div>
+    </main>
+</body>
+    <script src="script.js">
+        // Mengaktifkan semua ikon Lucide
+        lucide.createIcons();
+
+        // Script untuk menu mobile
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Script untuk mengubah tampilan header saat scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+    </script>
+</html>
