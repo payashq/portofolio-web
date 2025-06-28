@@ -6,23 +6,24 @@
     <title>Portofolio Pasyas</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header" id="header">
         <h1>Portofolio</h1>
         <div class="menu">
-            <h5>Home</h5>
-            <h5>Tentang</h5>
-            <h5>Proyek</h5>
-            <h5>Kontak</h5>
+            <a href="#home" style="text-decoration: none; color: aliceblue;"><h5>Home</h5></a>
+            <a href="#about" style="text-decoration: none; color: aliceblue;"><h5>About</h5></a>
+            <a href="#project" style="text-decoration: none; color: aliceblue;"><h5>Project</h5></a>
+            <a href="#contact" style="text-decoration: none; color: aliceblue;"><h5>Contact</h5></a>
         </div>
         <div class="callme-box">
             <h5>Hubungi saya</h5>
         </div>
     </header>
     <main class="main">
-        <div class="content-1">
-            <h1>Developer <span style="font-size: 50px;">&</span> <span style="color: #FBBF24">Product Manager</span></h1>
+        <div data-aos="fade-down" data-aos-duration="2000" id="home"class="content-1">
+            <h1 >Developer <span style="font-size: 50px;">&</span> <span style="color: #FBBF24">Product Manager</span></h1>
             <p>Merancang dan mengembangkan aplikasi web yang memenuhi kebutuhan bisnis Anda.</p>
             <div class="button-content-1">
                 <div class="button"><a href="#">Lihat Proyek</a></div>
@@ -30,7 +31,7 @@
             </div>
         </div>
         
-        <div class="content-2">
+        <div data-aos="fade-up" data-aos-duration="1500" id="about" class="content-2">
             <div class="image" ><img src="../assets/dev.jpg" alt="" style="width: 400px; height: 500px; border-radius: 100px;"></div>
             <div class="text-content-2">
                 <h2>About Me</h2>
@@ -41,7 +42,7 @@
                 Hobi gw adalah Olahraga (tepatnya badminton) dan Membaca buku <br>
                 kalo ditanya buku apa yang suka gw baca, jawabannya adalah buku self improvement dan bisnis
                 <br><br>
-                Porfofolio ini adalah projek pertama saya <br>
+                Porfofolio ini adalah projek pertama saya sebagai developer<br>
                 dan saya menaruh harapan untuk bisa menjadi developer profesional <br>
                 dengan cara berkarya dan terus belajar <br>
                 karna gw percaya bahwa <br><br>
@@ -56,7 +57,46 @@
                         </div>
                 </div>
         </div>
+        
+        <div data-aos="fade-up" data-aos-duration="1500" id="project" class="content-3">
+            <div class="title-content-3">
+                <h2 style="font-size: 40px; color: aliceblue; margin-bottom: 0;">My Project</h2>
+                <p style="font-size: 15px; color: #b4b4b4; margin-top: 0;">Berikut beberapa projek yang pernah saya kerjakan</p>
+            </div>
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500" class="card-content-3">
+                <div id="card1" class="card">
+                    <div></div>
+                </div>
+                <div id="card2" class="card">
+
+                </div>
+                <div id="card3" class="card" style="background-image: url(../assets/3.png);">
+
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="1500" id="contact" class="content-4">
+            <div style="margin-bottom: 2em;">
+                <h2 style="font-size: 40px; color: aliceblue; margin-bottom: 0;">Contact</h2>
+                <p style="font-size: 15px; color: #b4b4b4; margin-top: 0;">Punya ide brilian atau proyek yang menantang? Saya siap membantu mewujudkannya. <br> Jangan ragu untuk menghubungi saya.</p>
+            </div>
+            <div class = 'button-content-4'>
+                <div class="button-content-4" style="background-color: #dc9f24; "><a href="mailto:fayyazhq12@gmail.com" style="color: rgb(0, 0, 0);">kirim.email@sekarang.juga</a></div>
+            </div>
+                <h2 style="color: #b4b4b4 ;margin-top: 2em;">Atau dengan sosial media dibawah ini</h2>
+                <div class="sosmed" >
+                    <a class = "sosmed-icon" href="https://github.com/payashq" target="_blank"><img src="../assets/github.png" alt="" style="width: 40px; height: 40px;" ></a>
+                    <a class = "sosmed-icon" href="#"><img src="../assets/linkedin.png" alt="" style="width: 40px; height: 40px;"></a>
+                    <a class = "sosmed-icon" href="https://www.instagram.com/fayyazhq" target="_blank"><img src="../assets/instagram.png" alt="" style="width: 40px; height: 40px;"></a>
+                </div>
+        </div>
     </main>
+    <footer class="footer">
+        
+    </footer>
 </body>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </html>

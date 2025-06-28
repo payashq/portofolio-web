@@ -1,7 +1,9 @@
 *{
     font-family: 'Inter';
 }
-
+.main{
+    height: 500vh;
+}
 header{
     top: 0;
     left: 0;
@@ -20,10 +22,7 @@ header{
     color: aliceblue;
 }
 body{
-    background:linear-gradient(250deg,#153960 10%, #0b1c2ef7 20%, #070c11f7 50%) ;
-}
-.main{
-    height: 1000vh;
+    background:linear-gradient(210deg,#153960 10%, #0b1c2ef7 20%, #070c11f7 50%) ;
 }
 .menu{
     display: flex;
@@ -85,7 +84,7 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: rgb(244, 179, 51);
+    background-color: #f4b333;
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
     -ms-border-radius: 60px;
@@ -101,7 +100,7 @@ body{
 .content-2{
     display: flex;
     margin: 2em 3em;
-    margin-top: 10em;
+    margin-top: 6em;
     gap: 4em;
     padding: 2em 5em;
 }
@@ -128,4 +127,138 @@ body{
     display: flex;
     gap: 1.5em;
     margin-top: 1em;
+}
+.content-3{
+    text-align:center ;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 3em;
+    margin-top: 10em;
+    gap: 0;
+}
+.title-content-3{
+    padding: 0;
+    gap: 0;
+    margin: 0;
+}
+.card-content-3{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+}
+.card{
+    height: 350px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-top: 2em;
+    border-radius: 20px;
+    background-color: #00006d7a;
+    box-shadow: rgba(0, 0, 109, 0.452) 0px 10px 25px, rgb(0, 90, 115) 0px 10px 23px;
+    animation: alternate;
+    -webkit-animation: alternate;
+    cursor: pointer;
+    background: 20%;
+    background-size: 250px 300px;
+    /*memastikanseluruhgambarterlihat*/background-repeat: no-repeat;
+    /*supayatidakdiulang*/background-position: center;
+}
+#card2{
+    background: 50%;
+    background-size: 500px 298px;
+    background-repeat: no-repeat;
+}
+.card:hover{
+    box-shadow: #ffd786 0px 10px 25px, rgb(0, 90, 115) 0px 10px 23px;
+    transform: rotateY(160deg);
+    transition: 1.2s;
+    background-size: 250px 300px;
+    /*memastikanseluruhgambarterlihat*/background-repeat: no-repeat;
+    /*supayatidakdiulang*/background-position: center;
+    -webkit-transition: 1.2s;
+    -moz-transition: 1.2s;
+    -ms-transition: 1.2s;
+    -o-transition: 1.2s;
+    -webkit-transform: rotateY(160deg);
+    -moz-transform: rotateY(160deg);
+    -ms-transform: rotateY(160deg);
+    -o-transform: rotateY(160deg);
+}
+.content-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 5em;
+    gap: 2;
+}
+.button-content-4{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 58px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    box-shadow: #1d194b 0px 0px 100px;
+}
+.button-content-4 a{
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Inter';
+    font-weight: 650;
+    margin-top: 1em;
+}
+::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #111827;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #4b5563;
+            border-radius: 10px;
+            border: 2px solid #111827;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: #6b7280;
+        }
+.title-content-24{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 3em;
+    gap: 0;
+    color: aliceblue;
+}
+.sosmed{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    margin-top: 1em;
+}
+.sosmed-icon{
+    display: flex;
+    flex-direction: row;
+}
+.sosmed-icon:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 30px #fdff88);
 }
